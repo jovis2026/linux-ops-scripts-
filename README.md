@@ -38,6 +38,19 @@ chmod +x 脚本名.sh
 - 所有脚本均为学习使用，可自由修改、使用、分享
 - 持续更新更多实用运维脚本
 - 适合简历项目展示、面试作品展示
+## 📝 已包含脚本
+
+### monitoring/disk_alert.sh
+磁盘空间使用率监控告警脚本
+- 功能：自动检测磁盘使用率，超过阈值输出告警
+- 默认阈值：80%
+- 使用：./monitoring/disk_alert.sh 或 ./monitoring/disk_alert.sh 90
+
+### cleanup/log_cleanup.sh
+自动清理指定目录下过期的日志文件
+- 功能：删除指定目录下超过指定天数的 .log 文件
+- 默认目录：/var/log，默认保留天数：7天
+- 使用：./cleanup/log_cleanup.sh 或 ./cleanup/log_cleanup.sh /home/ops/logs 30
 
 ## ✉️ 联系方式
 邮箱：1415786768@qq.com
